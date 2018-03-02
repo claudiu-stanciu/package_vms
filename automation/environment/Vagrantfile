@@ -1,0 +1,19 @@
+Vagrant.configure("2") do |config|
+    config.vm.box = "centos/7"
+
+    config.vm.define "dewa-master"
+
+    config.vm.provider "virtualbox" do |v|
+        v.memory = 2000
+        v.cpus = 2
+        v.name = "dewa-master"
+    end
+
+    config.vm.network "forwarded_port", guest: 22, host: 2222, id: "ssh"
+
+    config.vm.provision "shell", inline: <<-SHELL
+
+        sudo /vagrant/setup.sh
+
+    SHELL
+  end
