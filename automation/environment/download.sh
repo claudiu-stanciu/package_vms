@@ -10,9 +10,7 @@ cd ${DIR_DOWNLOAD}
 
 echo 'Starting download'
 
-wget -c https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.21-1.el7.x86_64.rpm-bundle.tar
 wget -c http://public-repo-1.hortonworks.com/HDP/centos7/2.x/updates/2.6.4.0/HDP-2.6.4.0-centos7-rpm.tar.gz
-wget -c http://public-repo-1.hortonworks.com/ambari/centos7/2.x/updates/2.6.0.0/ambari-2.6.0.0-centos7.tar.gz
 wget -c https://repo.continuum.io/archive/Anaconda3-5.1.0-Linux-x86_64.sh
 wget -c https://pypi.python.org/packages/5f/b8/3dafc45f20a817ab9f042302646bcbe6f7e26e8a760871a85637e53a35ec/absl-py-0.1.10.tar.gz#md5=71fd85b74da723e36f7947e40462e9f4
 wget -c https://pypi.python.org/packages/a1/95/2252783859df9ec76b9a25d968c2827ed75a43ba34c6e8d38f87a5c0fb26/alembic-0.9.8.tar.gz#md5=5cfef58641c9a94d4a5d547e951a7dda
@@ -59,6 +57,17 @@ wget -c https://rpmfind.net/linux/centos/7.4.1708/os/x86_64/Packages/httpd-tools
 wget -c https://rpmfind.net/linux/centos/7.4.1708/os/x86_64/Packages/apr-util-1.5.2-6.el7.x86_64.rpm
 wget -c https://rpmfind.net/linux/centos/7.4.1708/os/x86_64/Packages/apr-1.4.8-3.el7.x86_64.rpm
 wget -c https://rpmfind.net/linux/centos/7.4.1708/os/x86_64/Packages/wget-1.14-15.el7.x86_64.rpm
+wget -c https://rpmfind.net/linux/centos/7.4.1708/os/x86_64/Packages/curl-7.29.0-42.el7.x86_64.rpm
 wget -c --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u162-b12/0da788060d494f5095bf8624735fa2f1/jdk-8u162-linux-x64.rpm
+wget -c --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jce/8/jce_policy-8.zip
+wget -c http://public-repo-1.hortonworks.com/HDP-UTILS-1.1.0.22/repos/centos7/HDP-UTILS-1.1.0.22-centos7.tar.gz
+wget -c http://public-repo-1.hortonworks.com/HDP-GPL/centos7/2.x/updates/2.6.4.0/HDP-GPL-2.6.4.0-centos7-rpm.tar.gz 
+wget -c http://public-repo-1.hortonworks.com/ambari/centos7/2.x/updates/2.6.1.3/ambari-2.6.1.3-centos7.tar.gz 
+wget -c https://yum.postgresql.org/10/redhat/rhel-7-x86_64/postgresql10-server-10.3-1PGDG.rhel7.x86_64.rpm 
+wget -c https://yum.postgresql.org/10/redhat/rhel-7-x86_64/postgresql10-10.3-1PGDG.rhel7.x86_64.rpm 
+wget -c https://yum.postgresql.org/10/redhat/rhel-7-x86_64/postgresql10-libs-10.3-1PGDG.rhel7.x86_64.rpm 
+wget -c https://rpmfind.net/linux/centos/7.4.1708/os/x86_64/Packages/libicu-50.1.2-15.el7.x86_64.rpm
+wget -c https://jdbc.postgresql.org/download/postgresql-42.2.1.jar
+wget -c https://rpmfind.net/linux/centos/7.4.1708/os/x86_64/Packages/libcurl-7.29.0-42.el7.x86_64.rpm
 
 echo 'Finished download'

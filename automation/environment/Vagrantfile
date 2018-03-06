@@ -4,16 +4,20 @@ Vagrant.configure("2") do |config|
     config.vm.define "dewa-master"
 
     config.vm.provider "virtualbox" do |v|
-        v.memory = 2000
+        v.memory = 4000
         v.cpus = 2
         v.name = "dewa-master"
     end
 
     config.vm.network "forwarded_port", guest: 22, host: 2222, id: "ssh"
+    config.vm.network "forwarded_port", guest: 5432, host: 5432, id: "postgresql"
+    config.vm.network "forwarded_port", guest: 8080, host: 8080, id: "ambariUI"
 
     config.vm.provision "shell", inline: <<-SHELL
 
-        sudo /vagrant/setup.sh
+        sudo /vagrant/setup_hostname.sh
+
+        # sudo /vagrant/setup.sh
 
     SHELL
   end
