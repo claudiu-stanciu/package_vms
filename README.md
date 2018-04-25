@@ -1,7 +1,6 @@
-# DEWA
+# Environment mock and setup with VM
 
-## Automation
-- environment mock and setup with VM
+Just check how the VM is constructed and run the `download.sh` script beforehand
 
 ### Requirements
 - vagrant 2.0.2+
