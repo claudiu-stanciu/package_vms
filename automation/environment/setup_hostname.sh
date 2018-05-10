@@ -1,6 +1,6 @@
 #/bin/bash
 
-export HOSTNAME=sandbox.dewa
+export HOSTNAME=sandbox.analytics
 export IP_ETH0=$(ip -o addr show up primary scope global |
       while read -r num dev fam addr rest; do echo ${addr%/*}; done)
 sudo echo ${HOSTNAME} > /etc/hostname
